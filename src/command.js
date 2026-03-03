@@ -7,6 +7,7 @@ import {
   removeAll,
   removeNote,
 } from "./notesCRUD.js";
+import { start } from "./template.js";
 
 yargs(hideBin(process.argv))
   .command(
@@ -83,7 +84,10 @@ yargs(hideBin(process.argv))
         type: "number",
       });
     },
-    async (argv) => {},
+    async (argv) => {
+      const notes = await getAllNotes();
+      start(notes, argv.port);
+    },
   )
   .command(
     "clean",

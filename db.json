@@ -1,3 +1,20 @@
 {
-  "notes": []
+  "notes": [
+    {
+      "tags": [
+        "imp",
+        " urgent"
+      ],
+      "id": 1772572768634,
+      "content": "Clean up"
+    },
+    {
+      "tags": [
+        "imp",
+        " urgent"
+      ],
+      "id": 1772572796437,
+      "content": "Complete course"
+    }
+  ]
 }
